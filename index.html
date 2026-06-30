@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidad — FriendZone Detector</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #0f0f0f;
+      color: #e0e0e0;
+      line-height: 1.7;
+    }
+    header {
+      background: linear-gradient(135deg, #e91e8c, #7c3aed);
+      padding: 40px 24px 32px;
+      text-align: center;
+    }
+    header h1 { font-size: 1.8rem; color: #fff; font-weight: 700; }
+    header p  { color: rgba(255,255,255,0.75); margin-top: 6px; font-size: 0.9rem; }
+    .lang-toggle {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      padding: 20px 24px 0;
+    }
+    .lang-toggle button {
+      background: #1e1e1e;
+      border: 1px solid #333;
+      color: #e0e0e0;
+      padding: 8px 20px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 0.85rem;
+      transition: all .2s;
+    }
+    .lang-toggle button.active {
+      background: #e91e8c;
+      border-color: #e91e8c;
+      color: #fff;
+      font-weight: 600;
+    }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 32px 24px 64px;
+    }
+    section { display: none; }
+    section.visible { display: block; }
+    h2 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #e91e8c;
+      margin: 28px 0 8px;
+      text-transform: uppercase;
+      letter-spacing: .5px;
+    }
+    p { color: #c0c0c0; margin-bottom: 8px; }
+    footer {
+      text-align: center;
+      padding: 24px;
+      color: #555;
+      font-size: 0.8rem;
+      border-top: 1px solid #1e1e1e;
+    }
+    a { color: #e91e8c; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>💘 FriendZone Detector</h1>
+  <p id="header-sub">Política de Privacidad</p>
+</header>
+
+<div class="lang-toggle">
+  <button class="active" onclick="setLang('es')">🇪🇸 Español</button>
+  <button onclick="setLang('en')">🇬🇧 English</button>
+</div>
+
+<main>
+
+  <!-- ESPAÑOL -->
+  <section id="es" class="visible">
+    <h2>1. Datos que recopilamos</h2>
+    <p>FriendZone Detector <strong>no recopila, transmite ni almacena ningún dato personal en servidores externos</strong>. La aplicación funciona completamente sin conexión a internet.</p>
+    <p>Toda la información que introduces en la app (nombres, respuestas al cuestionario, análisis de conversaciones, historial) se almacena únicamente en el almacenamiento local de tu dispositivo y nunca sale de él.</p>
+
+    <h2>2. Uso de datos</h2>
+    <p>Los datos introducidos por el usuario se utilizan exclusivamente para generar los resultados y análisis dentro de la propia aplicación. No se comparten con terceros, no se venden y no se utilizan con fines publicitarios ni analíticos.</p>
+
+    <h2>3. Notificaciones</h2>
+    <p>La app puede enviarte notificaciones locales de seguimiento si las activas. Estas notificaciones se generan y gestionan íntegramente en tu dispositivo, sin comunicación con ningún servidor externo.</p>
+
+    <h2>4. Compras in-app</h2>
+    <p>Las compras del plan Pro se procesan a través de <strong>Google Play Billing</strong>. FriendZone Detector no tiene acceso a tus datos de pago. La información de la compra la gestiona Google según su propia política de privacidad.</p>
+
+    <h2>5. Menores de edad</h2>
+    <p>La app está orientada a usuarios <strong>mayores de 16 años</strong>. No recopilamos conscientemente información de menores de esa edad.</p>
+
+    <h2>6. Cambios en esta política</h2>
+    <p>Cualquier cambio en esta política se publicará en esta misma página con la fecha de actualización correspondiente.</p>
+
+    <h2>7. Contacto</h2>
+    <p>Para cualquier consulta sobre privacidad: <a href="mailto:friendzonedetectorapp@gmail.com">friendzonedetectorapp@gmail.com</a></p>
+
+    <p style="margin-top:32px; color:#555; font-size:0.85rem;">Última actualización: 30 de junio de 2026</p>
+  </section>
+
+  <!-- ENGLISH -->
+  <section id="en">
+    <h2>1. Data we collect</h2>
+    <p>FriendZone Detector <strong>does not collect, transmit, or store any personal data on external servers</strong>. The app works entirely offline and requires no internet connection.</p>
+    <p>All information you enter in the app (names, quiz answers, conversation analysis, history) is stored exclusively on your device's local storage and never leaves it.</p>
+
+    <h2>2. How we use data</h2>
+    <p>Data entered by the user is used solely to generate results and analysis within the app itself. It is not shared with third parties, not sold, and not used for advertising or analytics purposes.</p>
+
+    <h2>3. Notifications</h2>
+    <p>The app may send you local follow-up notifications if you enable them. These notifications are generated and managed entirely on your device, with no communication to any external server.</p>
+
+    <h2>4. In-app purchases</h2>
+    <p>Pro plan purchases are processed through <strong>Google Play Billing</strong>. FriendZone Detector has no access to your payment details. Purchase information is managed by Google under their own privacy policy.</p>
+
+    <h2>5. Age</h2>
+    <p>This app is intended for users <strong>aged 16 and over</strong>. We do not knowingly collect information from users under that age.</p>
+
+    <h2>6. Changes to this policy</h2>
+    <p>Any changes to this policy will be published on this page with the corresponding update date.</p>
+
+    <h2>7. Contact</h2>
+    <p>For any privacy-related questions: <a href="mailto:friendzonedetectorapp@gmail.com">friendzonedetectorapp@gmail.com</a></p>
+
+    <p style="margin-top:32px; color:#555; font-size:0.85rem;">Last updated: June 30, 2026</p>
+  </section>
+
+</main>
+
+<footer>
+  FriendZone Detector &nbsp;·&nbsp; <a href="mailto:friendzonedetectorapp@gmail.com">friendzonedetectorapp@gmail.com</a>
+</footer>
+
+<script>
+  function setLang(lang) {
+    document.getElementById('es').classList.remove('visible');
+    document.getElementById('en').classList.remove('visible');
+    document.getElementById(lang).classList.add('visible');
+    document.querySelectorAll('.lang-toggle button').forEach(b => b.classList.remove('active'));
+    document.querySelector(`.lang-toggle button[onclick="setLang('${lang}')"]`).classList.add('active');
+    document.getElementById('header-sub').textContent =
+      lang === 'es' ? 'Política de Privacidad' : 'Privacy Policy';
+  }
+</script>
+
+</body>
+</html>
