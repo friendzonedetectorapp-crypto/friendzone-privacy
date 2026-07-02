@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estándares de Seguridad Infantil — FriendZone Detector</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #0f0f0f;
+      color: #e0e0e0;
+      line-height: 1.7;
+    }
+    header {
+      background: linear-gradient(135deg, #e91e8c, #7c3aed);
+      padding: 40px 24px 32px;
+      text-align: center;
+    }
+    header h1 { font-size: 1.8rem; color: #fff; font-weight: 700; }
+    header p  { color: rgba(255,255,255,0.75); margin-top: 6px; font-size: 0.9rem; }
+    .lang-toggle {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      padding: 20px 24px 0;
+    }
+    .lang-toggle button {
+      background: #1e1e1e;
+      border: 1px solid #333;
+      color: #e0e0e0;
+      padding: 8px 20px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 0.85rem;
+      transition: all .2s;
+    }
+    .lang-toggle button.active {
+      background: #e91e8c;
+      border-color: #e91e8c;
+      color: #fff;
+      font-weight: 600;
+    }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 32px 24px 64px;
+    }
+    section { display: none; }
+    section.visible { display: block; }
+    h2 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #e91e8c;
+      margin: 28px 0 8px;
+      text-transform: uppercase;
+      letter-spacing: .5px;
+    }
+    p { color: #c0c0c0; margin-bottom: 8px; }
+    ul { color: #c0c0c0; margin: 8px 0 8px 20px; }
+    li { margin-bottom: 6px; }
+    footer {
+      text-align: center;
+      padding: 24px;
+      color: #555;
+      font-size: 0.8rem;
+      border-top: 1px solid #1e1e1e;
+    }
+    a { color: #e91e8c; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>💘 FriendZone Detector</h1>
+  <p id="header-sub">Estándares de Seguridad Infantil</p>
+</header>
+
+<div class="lang-toggle">
+  <button class="active" onclick="setLang('es')">🇪🇸 Español</button>
+  <button onclick="setLang('en')">🇬🇧 English</button>
+</div>
+
+<main>
+
+  <!-- ESPAÑOL -->
+  <section id="es" class="visible">
+    <h2>1. Compromiso de tolerancia cero</h2>
+    <p>FriendZone Detector tiene <strong>tolerancia cero absoluta</strong> ante cualquier forma de explotación o abuso sexual infantil (EASI, en inglés CSAE). No permitimos, facilitamos ni toleramos este tipo de contenido o conducta bajo ninguna circunstancia.</p>
+
+    <h2>2. Naturaleza de la aplicación</h2>
+    <p>FriendZone Detector es una app de análisis personal que funciona <strong>completamente sin conexión a internet</strong>. No dispone de:</p>
+    <ul>
+      <li>Chat, mensajería o comunicación entre usuarios</li>
+      <li>Perfiles públicos ni contenido generado por usuarios visible por terceros</li>
+      <li>Función de compartir o subir imágenes, vídeos o archivos a servidores</li>
+      <li>Ningún mecanismo para que dos usuarios de la app contacten entre sí</li>
+    </ul>
+    <p>Toda la información que el usuario introduce (nombres, respuestas, conversaciones pegadas para análisis) se procesa y almacena únicamente en su propio dispositivo, y nunca se transmite, publica ni comparte con otros usuarios ni con terceros.</p>
+
+    <h2>3. Edad mínima</h2>
+    <p>La aplicación está dirigida a usuarios <strong>mayores de 16 años</strong>. No está diseñada, dirigida ni orientada a menores de esa edad.</p>
+
+    <h2>4. Detección y denuncia</h2>
+    <p>Si, pese a la ausencia de funciones de comunicación entre usuarios, se detectara cualquier uso indebido de la aplicación relacionado con EASI, nos comprometemos a:</p>
+    <ul>
+      <li>Cooperar plenamente con las autoridades competentes</li>
+      <li>Eliminar de inmediato cualquier funcionalidad que pudiera facilitar dicho uso indebido</li>
+      <li>Reportar cualquier indicio a las autoridades pertinentes conforme a la legislación aplicable</li>
+    </ul>
+
+    <h2>5. Contacto</h2>
+    <p>Para reportar cualquier incidencia relacionada con seguridad infantil o para cualquier consulta sobre estos estándares: <a href="mailto:friendzonedetectorapp@gmail.com">friendzonedetectorapp@gmail.com</a></p>
+
+    <p style="margin-top:32px; color:#555; font-size:0.85rem;">Última actualización: 2 de julio de 2026</p>
+  </section>
+
+  <!-- ENGLISH -->
+  <section id="en">
+    <h2>1. Zero-tolerance commitment</h2>
+    <p>FriendZone Detector has <strong>absolute zero tolerance</strong> for any form of child sexual abuse or exploitation (CSAE). We do not allow, facilitate, or tolerate this type of content or conduct under any circumstances.</p>
+
+    <h2>2. Nature of the application</h2>
+    <p>FriendZone Detector is a personal analysis app that works <strong>entirely offline</strong>. It does not have:</p>
+    <ul>
+      <li>Chat, messaging, or communication between users</li>
+      <li>Public profiles or user-generated content visible to third parties</li>
+      <li>Any feature to share or upload images, videos, or files to servers</li>
+      <li>Any mechanism for two app users to contact each other</li>
+    </ul>
+    <p>All information the user enters (names, answers, conversations pasted for analysis) is processed and stored solely on their own device, and is never transmitted, published, or shared with other users or third parties.</p>
+
+    <h2>3. Minimum age</h2>
+    <p>The app is intended for users <strong>aged 16 and over</strong>. It is not designed, directed, or targeted at users under that age.</p>
+
+    <h2>4. Detection and reporting</h2>
+    <p>If, despite the absence of user-to-user communication features, any misuse of the app related to CSAE were detected, we commit to:</p>
+    <ul>
+      <li>Fully cooperate with the relevant authorities</li>
+      <li>Immediately remove any functionality that could facilitate such misuse</li>
+      <li>Report any indication to the relevant authorities in accordance with applicable law</li>
+    </ul>
+
+    <h2>5. Contact</h2>
+    <p>To report any child safety related incident or for any questions about these standards: <a href="mailto:friendzonedetectorapp@gmail.com">friendzonedetectorapp@gmail.com</a></p>
+
+    <p style="margin-top:32px; color:#555; font-size:0.85rem;">Last updated: July 2, 2026</p>
+  </section>
+
+</main>
+
+<footer>
+  FriendZone Detector &nbsp;·&nbsp; <a href="mailto:friendzonedetectorapp@gmail.com">friendzonedetectorapp@gmail.com</a>
+</footer>
+
+<script>
+  function setLang(lang) {
+    document.getElementById('es').classList.remove('visible');
+    document.getElementById('en').classList.remove('visible');
+    document.getElementById(lang).classList.add('visible');
+    document.querySelectorAll('.lang-toggle button').forEach(b => b.classList.remove('active'));
+    document.querySelector(`.lang-toggle button[onclick="setLang('${lang}')"]`).classList.add('active');
+    document.getElementById('header-sub').textContent =
+      lang === 'es' ? 'Estándares de Seguridad Infantil' : 'Child Safety Standards';
+  }
+</script>
+
+</body>
+</html>
