@@ -1,191 +1,68 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Política de Privacidad — FriendZone Detector</title>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: #0f0f0f;
-      color: #e0e0e0;
-      line-height: 1.7;
-    }
-    header {
-      background: linear-gradient(135deg, #e91e8c, #7c3aed);
-      padding: 40px 24px 32px;
-      text-align: center;
-    }
-    header h1 { font-size: 1.8rem; color: #fff; font-weight: 700; }
-    header p  { color: rgba(255,255,255,0.75); margin-top: 6px; font-size: 0.9rem; }
-    .lang-toggle {
-      display: flex;
-      justify-content: center;
-      gap: 12px;
-      padding: 20px 24px 0;
-    }
-    .lang-toggle button {
-      background: #1e1e1e;
-      border: 1px solid #333;
-      color: #e0e0e0;
-      padding: 8px 20px;
-      border-radius: 20px;
-      cursor: pointer;
-      font-size: 0.85rem;
-      transition: all .2s;
-    }
-    .lang-toggle button.active {
-      background: #e91e8c;
-      border-color: #e91e8c;
-      color: #fff;
-      font-weight: 600;
-    }
-    main {
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 32px 24px 64px;
-    }
-    section { display: none; }
-    section.visible { display: block; }
-    h2 {
-      font-size: 1.05rem;
-      font-weight: 700;
-      color: #e91e8c;
-      margin: 28px 0 8px;
-      text-transform: uppercase;
-      letter-spacing: .5px;
-    }
-    p { color: #c0c0c0; margin-bottom: 8px; }
-    footer {
-      text-align: center;
-      padding: 24px;
-      color: #555;
-      font-size: 0.8rem;
-      border-top: 1px solid #1e1e1e;
-    }
-    a { color: #e91e8c; text-decoration: none; }
-  </style>
-</head>
-<body>
-
-<header>
-  <h1>💘 FriendZone Detector</h1>
-  <p id="header-sub">Política de Privacidad</p>
-</header>
-
-<div class="lang-toggle">
-  <button class="active" onclick="setLang('es')">🇪🇸 Español</button>
-  <button onclick="setLang('en')">🇬🇧 English</button>
-</div>
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacidad · FriendZone Detector</title>
+<style>body{margin:0;background:#101020;color:#eee7f8;font:17px/1.7 system-ui,sans-serif}main{max-width:850px;margin:auto;padding:45px 24px}h1,h2,h3{line-height:1.25}h1{font-size:38px}h2{margin-top:60px;color:#ff8fbd}h3{margin-top:30px;font-size:21px}a{color:#c8b6ff}small{color:#b7accb}nav{margin:20px 0}section{scroll-margin-top:20px}</style>
 <main>
-
-  <!-- ESPAÑOL -->
-  <section id="es" class="visible">
-    <h2>1. Tu contenido no sale de tu dispositivo</h2>
-    <p>Todo lo que introduces en FriendZone Detector —nombres, respuestas del test, conversaciones que pegas para analizar, resultados e historial— se guarda <strong>únicamente en el almacenamiento local de tu dispositivo y nunca se envía a ningún servidor</strong>. Nosotros no tenemos acceso a esa información ni a ella nunca llega a nuestros sistemas.</p>
-    <p>Los análisis funcionan sin conexión a internet. La app sí utiliza internet para dos finalidades concretas: mostrar publicidad (ver sección 3) y enviar informes técnicos si la aplicación falla (ver sección 4). Ninguna de las dos incluye el contenido que introduces.</p>
-
-    <h2>2. Uso de tu contenido</h2>
-    <p>El contenido que introduces se utiliza exclusivamente para generar los resultados y análisis dentro de la propia aplicación. <strong>No lo compartimos con terceros, no lo vendemos y no lo usamos con fines publicitarios.</strong></p>
-
-    <h2>3. Publicidad</h2>
-    <p>Para mantener la app gratuita, FriendZone Detector incluye publicidad a través de <strong>Google AdMob</strong>. La app muestra anuncios opcionales de tipo recompensado: puedes elegir ver un anuncio para desbloquear puntualmente ciertas funciones.</p>
-    <p>El SDK de Google AdMob puede recopilar y procesar un <strong>identificador de publicidad (Advertising ID)</strong> de tu dispositivo, junto con datos de uso y del dispositivo, con el fin de mostrar anuncios y medir su rendimiento. Estos datos se comparten con Google como proveedor de publicidad y se rigen por la <a href="https://policies.google.com/privacy">Política de Privacidad de Google</a>. Esta funcionalidad requiere conexión a internet.</p>
-    <p>Puedes restablecer o eliminar tu identificador de publicidad, o limitar la personalización de anuncios, desde los ajustes de tu dispositivo Android (Ajustes › Privacidad › Anuncios).</p>
-
-    <h2>4. Diagnóstico de fallos</h2>
-    <p>FriendZone Detector utiliza <strong>Firebase Crashlytics</strong> (Google) para detectar y solucionar errores técnicos. Si la app se bloquea o falla inesperadamente, se envía automáticamente un informe técnico del fallo (registro de errores, versión de la app, modelo y estado del dispositivo en el momento del bloqueo). Este informe <strong>no incluye el contenido que introduces en la app</strong> (nombres, respuestas, conversaciones o resultados).</p>
-    <p>Esta recogida no puede desactivarse desde la app y se usa exclusivamente para diagnosticar y corregir errores; no se utiliza con fines publicitarios ni se comparte con terceros salvo con Google como proveedor del servicio. Más información en la <a href="https://policies.google.com/privacy">Política de Privacidad de Google</a>.</p>
-
-    <h2>5. Notificaciones</h2>
-    <p>La app puede enviarte notificaciones locales de seguimiento si las activas. Estas notificaciones se generan y gestionan íntegramente en tu dispositivo, sin comunicación con ningún servidor externo.</p>
-
-    <h2>6. Compras in-app</h2>
-    <p>Las compras del plan Pro se procesan a través de <strong>Google Play Billing</strong>. FriendZone Detector no tiene acceso a tus datos de pago. La información de la compra la gestiona Google según su propia política de privacidad.</p>
-
-    <h2>7. Menores de edad</h2>
-    <p>La app está orientada a usuarios <strong>mayores de 13 años</strong>. No recopilamos conscientemente información de menores de esa edad.</p>
-
-    <h2>8. Si estás en la Unión Europea (RGPD)</h2>
-    <p><strong>Responsable del tratamiento:</strong> FriendZone Apps — contacto en <a href="mailto:friendzonedetectorapp@gmail.com">friendzonedetectorapp@gmail.com</a>.</p>
-    <p><strong>Qué datos y con qué base legal.</strong> El contenido que introduces (nombres, respuestas, conversaciones, resultados) no sale de tu dispositivo, así que no hay tratamiento por nuestra parte. Los únicos datos que salen son:</p>
-    <p>• <strong>Identificador de publicidad y datos de dispositivo</strong>, para mostrar anuncios. Base legal: <strong>tu consentimiento</strong>. Si estás en el EEE, el Reino Unido o Suiza, la app te pide ese consentimiento la primera vez mediante un formulario y puedes cambiarlo cuando quieras desde <em>Ajustes → Opciones de privacidad de anuncios</em>. Si lo rechazas, seguirás viendo anuncios pero no personalizados.</p>
-    <p>• <strong>Informes de fallo</strong> (Firebase Crashlytics), sin contenido tuyo. Base legal: <strong>interés legítimo</strong> en mantener la aplicación funcionando y corregir errores.</p>
-    <p><strong>Tus derechos.</strong> Puedes solicitar acceso, rectificación, supresión, limitación, oposición y portabilidad escribiendo a <a href="mailto:friendzonedetectorapp@gmail.com">friendzonedetectorapp@gmail.com</a>. Como no tenemos cuentas de usuario ni almacenamos tu contenido, en la práctica la supresión de todo lo que la app guarda se consigue desinstalándola o borrando sus datos desde los ajustes de Android. También puedes retirar tu consentimiento publicitario en cualquier momento y presentar una reclamación ante tu autoridad de protección de datos (en España, la AEPD).</p>
-    <p><strong>Transferencias y conservación.</strong> Google puede tratar los datos publicitarios y de diagnóstico fuera del EEE con las garantías previstas en su propia política. Nosotros no conservamos ninguna base de datos con tu información.</p>
-
-    <h2>9. Cambios en esta política</h2>
-    <p>Cualquier cambio en esta política se publicará en esta misma página con la fecha de actualización correspondiente.</p>
-
-    <h2>10. Contacto</h2>
-    <p>Para cualquier consulta sobre privacidad: <a href="mailto:friendzonedetectorapp@gmail.com">friendzonedetectorapp@gmail.com</a></p>
-
-    <p style="margin-top:32px; color:#555; font-size:0.85rem;">Última actualización: 27 de julio de 2026</p>
-  </section>
-
-  <!-- ENGLISH -->
-  <section id="en">
-    <h2>1. Your content never leaves your device</h2>
-    <p>Everything you enter in FriendZone Detector —names, quiz answers, conversations you paste for analysis, results and history— is stored <strong>only in your device's local storage and is never sent to any server</strong>. We have no access to that information; it never reaches our systems.</p>
-    <p>The analysis features work offline. The app does use the internet for two specific purposes: to show advertising (see section 3) and to send technical reports if the app crashes (see section 4). Neither of them includes the content you enter.</p>
-
-    <h2>2. How we use your content</h2>
-    <p>The content you enter is used solely to generate results and analysis within the app itself. <strong>We do not share it with third parties, we do not sell it, and we do not use it for advertising purposes.</strong></p>
-
-    <h2>3. Advertising</h2>
-    <p>To keep the app free, FriendZone Detector includes advertising through <strong>Google AdMob</strong>. The app shows optional, rewarded ads: you can choose to watch an ad to temporarily unlock certain features.</p>
-    <p>The Google AdMob SDK may collect and process an <strong>advertising identifier (Advertising ID)</strong> from your device, along with usage and device data, in order to serve ads and measure their performance. This data is shared with Google as the advertising provider and is governed by the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. This feature requires an internet connection.</p>
-    <p>You can reset or delete your advertising identifier, or limit ad personalization, from your Android device settings (Settings › Privacy › Ads).</p>
-
-    <h2>4. Crash diagnostics</h2>
-    <p>FriendZone Detector uses <strong>Firebase Crashlytics</strong> (Google) to detect and fix technical errors. If the app crashes or fails unexpectedly, a technical crash report is automatically sent (error log, app version, device model and state at the time of the crash). This report <strong>does not include the content you enter in the app</strong> (names, answers, conversations or results).</p>
-    <p>This collection cannot be disabled from within the app and is used exclusively to diagnose and fix errors; it is not used for advertising purposes and is not shared with third parties other than Google as the service provider. More information in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
-
-    <h2>5. Notifications</h2>
-    <p>The app may send you local follow-up notifications if you enable them. These notifications are generated and managed entirely on your device, with no communication to any external server.</p>
-
-    <h2>6. In-app purchases</h2>
-    <p>Pro plan purchases are processed through <strong>Google Play Billing</strong>. FriendZone Detector has no access to your payment details. Purchase information is managed by Google under their own privacy policy.</p>
-
-    <h2>7. Age</h2>
-    <p>This app is intended for users <strong>aged 13 and over</strong>. We do not knowingly collect information from users under that age.</p>
-
-    <h2>8. If you are in the European Union (GDPR)</h2>
-    <p><strong>Data controller:</strong> FriendZone Apps — contact at <a href="mailto:friendzonedetectorapp@gmail.com">friendzonedetectorapp@gmail.com</a>.</p>
-    <p><strong>What data, and on what legal basis.</strong> The content you enter (names, answers, conversations, results) never leaves your device, so there is no processing on our side. The only data that leaves the device is:</p>
-    <p>• <strong>Advertising identifier and device data</strong>, to show ads. Legal basis: <strong>your consent</strong>. If you are in the EEA, the UK or Switzerland, the app asks for that consent the first time through a form, and you can change it any time from <em>Settings → Ad privacy options</em>. If you decline, you will still see ads, but non-personalised ones.</p>
-    <p>• <strong>Crash reports</strong> (Firebase Crashlytics), with none of your content. Legal basis: <strong>legitimate interest</strong> in keeping the app working and fixing errors.</p>
-    <p><strong>Your rights.</strong> You can request access, rectification, erasure, restriction, objection and portability by writing to <a href="mailto:friendzonedetectorapp@gmail.com">friendzonedetectorapp@gmail.com</a>. Since there are no user accounts and we do not store your content, in practice everything the app keeps is erased by uninstalling it or clearing its data from Android settings. You may also withdraw your advertising consent at any time and lodge a complaint with your data protection authority.</p>
-    <p><strong>Transfers and retention.</strong> Google may process advertising and diagnostic data outside the EEA under the safeguards set out in its own policy. We keep no database containing your information.</p>
-
-    <h2>9. Changes to this policy</h2>
-    <p>Any changes to this policy will be published on this page with the corresponding update date.</p>
-
-    <h2>10. Contact</h2>
-    <p>For any privacy-related questions: <a href="mailto:friendzonedetectorapp@gmail.com">friendzonedetectorapp@gmail.com</a></p>
-
-    <p style="margin-top:32px; color:#555; font-size:0.85rem;">Last updated: July 27, 2026</p>
-  </section>
-
+<header>
+<h1>FriendZone Detector</h1>
+<small>Última actualización / Last updated · 17/10/2026</small>
+<nav>
+<a href="#es">Español</a> · <a href="#en">English</a>
+</nav>
+</header>
+<section id="es" lang="es">
+<h2>Política de privacidad</h2>
+<h3>1. Tu contenido y los análisis</h3>
+<p>Los nombres y apodos, respuestas, conversaciones importadas, resultados y preferencias se procesan en tu dispositivo. Los motores de análisis funcionan sin conexión. No enviamos ese contenido a servidores de FriendZone Apps ni lo añadimos a los informes de diagnóstico. El chat que estás preparando se mantiene en memoria; el historial y el perfil se guardan localmente.</p>
+<h3>2. Compartir y copias de seguridad</h3>
+<p>Cuando eliges compartir una tarjeta, Android la entrega a la aplicación o al destinatario que selecciones. Puedes ocultar los nombres antes de compartir. Si tienes activada la copia de seguridad o la transferencia de datos de Android, el sistema puede incluir los datos locales de FriendZone Detector según la configuración de tu dispositivo y proveedor de copias. El estado de Pro se excluye de esas copias y se comprueba con Google Play.</p>
+<h3>3. Publicidad y tus preferencias</h3>
+<p>La versión gratuita puede mostrar anuncios de Google AdMob al terminar determinados análisis, con un límite de frecuencia. También ofrece anuncios recompensados que eliges ver para desbloquear funciones puntuales. Los anuncios de pantalla completa al volver a Inicio no requieren pulsar una opción de recompensa. Pro elimina la visualización de anuncios.</p>
+<h3>4. Datos de los servicios publicitarios</h3>
+<p>El SDK de Google AdMob puede tratar la dirección IP y una ubicación aproximada derivada de ella, identificadores del dispositivo o de publicidad, interacciones con la app y los anuncios y datos de diagnóstico. Se utilizan para publicidad, medición y prevención del fraude según la configuración y las preferencias aplicables. El contenido que introduces en los análisis no se proporciona a AdMob. Puedes gestionar tu identificador de publicidad desde Android.</p>
+<h3>5. Consentimiento publicitario</h3>
+<p>En los territorios donde corresponde, Google UMP presenta las opciones de privacidad. Puedes revisarlas desde Ajustes → Preferencias de anuncios cuando esa opción esté disponible. La app consulta si se pueden solicitar anuncios antes de cargarlos o mostrarlos y descarta los anuncios precargados cuando cambias tus preferencias. Según tu elección y los servicios disponibles, pueden mostrarse anuncios limitados o no personalizados, o no estar disponibles.</p>
+<h3>6. Diagnóstico de fallos</h3>
+<p>Utilizamos Firebase Crashlytics, de Google, para detectar y corregir fallos. Puede enviar trazas de errores, estado técnico de la app, información del dispositivo e identificadores de instalación para medir los problemas. No añadimos nombres, conversaciones, respuestas ni resultados a los registros de Crashlytics. La recogida técnica es automática y no dispone de interruptor dentro de la app.</p>
+<h3>7. Compras</h3>
+<p>Pro es una compra opcional de pago único gestionada por Google Play Billing. Google procesa el pago; la app recibe el estado y los datos técnicos de la compra necesarios para activar, restaurar o retirar el acceso. No recibimos los datos de tu tarjeta. La app conserva una comprobación local de Pro para su uso sin conexión y la actualiza cuando Google Play responde.</p>
+<h3>8. Notificaciones y edad</h3>
+<p>Los recordatorios son locales y puedes gestionarlos desde la app y Android. La app está dirigida a personas de 13 años o más, conforme al público indicado en su ficha. Si el perfil declara una edad inferior a 18 años, la app comunica esa condición a los servicios de consentimiento y publicidad. No hay cuentas de usuario ni mensajería entre usuarios dentro de FriendZone Detector.</p>
+<h3>9. Bases del tratamiento</h3>
+<p>En el EEE, Reino Unido y Suiza, el acceso a identificadores publicitarios y la personalización se someten a las opciones de consentimiento aplicables que presenta Google UMP. El diagnóstico técnico se utiliza por el interés legítimo de mantener y corregir la app. La compra y comprobación de Pro son necesarias para prestar la función que adquieres. Retirar el consentimiento publicitario no elimina la compra ni impide usar las herramientas locales.</p>
+<h3>10. Conservación, eliminación y contacto</h3>
+<p>Puedes eliminar entradas del historial o borrar el historial desde la app. Android permite borrar todos sus datos locales o desinstalarla; gestiona por separado las copias de seguridad y las tarjetas que hayas compartido. Google gestiona los datos publicitarios, de diagnóstico y de compras conforme a sus propias políticas y configuración. Responsable indicado para la app: FriendZone Apps. Para consultas y solicitudes de privacidad: friendzonedetectorapp@gmail.com. Puedes solicitar acceso, rectificación, supresión, limitación, oposición y portabilidad cuando corresponda, retirar el consentimiento y presentar una reclamación ante tu autoridad de protección de datos (en España, la AEPD). Google puede tratar datos fuera de tu país conforme a sus garantías y condiciones de servicio.</p>
+<p>
+<a href="https://policies.google.com/privacy">Google · Privacidad / Privacy</a> · <a href="mailto:friendzonedetectorapp@gmail.com">Contacto / Contact</a>
+</p>
+</section>
+<section id="en" lang="en">
+<h2>Privacy policy</h2>
+<h3>1. Your content and analyses</h3>
+<p>Names and nicknames, answers, imported conversations, results and preferences are processed on your device. The analysis engines work offline. We do not send this content to FriendZone Apps servers or add it to diagnostic reports. Your chat draft stays in memory; history and profile information are stored locally.</p>
+<h3>2. Sharing and device backups</h3>
+<p>When you choose to share a card, Android passes it to the app or recipient you select. You can hide names before sharing. If Android backup or device transfer is enabled, the system may include FriendZone Detector local data according to your device and backup provider settings. Pro entitlement is excluded from backups and checked with Google Play.</p>
+<h3>3. Advertising and your choices</h3>
+<p>The free version may show Google AdMob ads after certain analyses, with a frequency limit. It also offers rewarded ads that you choose to watch to unlock features temporarily. Full-screen ads on the return to Home do not require you to select a rewarded option. Pro removes ad display.</p>
+<h3>4. Advertising service data</h3>
+<p>Google AdMob may process the IP address and approximate location derived from it, device or advertising identifiers, app and ad interactions, and diagnostics. These support advertising, measurement and fraud prevention according to the applicable settings and choices. Content entered for analysis is not supplied to AdMob. You can manage your advertising identifier in Android settings.</p>
+<h3>5. Advertising consent</h3>
+<p>Where applicable, Google UMP presents privacy choices. You can revisit them under Settings → Ad preferences when that option is available. The app checks whether ads can be requested before loading or displaying them, and discards cached ads when you change your choices. Depending on those choices and service availability, limited or non-personalised ads may be available, or ads may be unavailable.</p>
+<h3>6. Crash diagnostics</h3>
+<p>We use Google Firebase Crashlytics to detect and fix faults. It may send error stack traces, technical app state, device information and installation identifiers to measure problems. We do not add names, conversations, answers or results to Crashlytics logs. Technical collection is automatic and has no in-app switch.</p>
+<h3>7. Purchases</h3>
+<p>Pro is an optional one-time purchase handled by Google Play Billing. Google processes payment; the app receives the purchase state and technical details needed to grant, restore or revoke access. We do not receive card details. The app keeps a local entitlement check for offline use and updates it when Google Play responds.</p>
+<h3>8. Notifications and age</h3>
+<p>Reminders are local and can be managed through the app and Android. The app is intended for people aged 13 and over, consistent with its store audience. When a profile indicates an age under 18, the app passes that condition to consent and advertising services. FriendZone Detector has no user accounts or messaging between users.</p>
+<h3>9. Grounds for processing</h3>
+<p>In the EEA, UK and Switzerland, access to advertising identifiers and personalisation are subject to the applicable consent choices presented by Google UMP. Technical diagnostics support our legitimate interest in maintaining and fixing the app. Processing and checking Pro purchases are necessary to provide the feature you buy. Withdrawing advertising consent does not remove your purchase or prevent use of the local tools.</p>
+<h3>10. Retention, deletion and contact</h3>
+<p>You can delete history entries or clear history in the app. Android lets you erase all local app data or uninstall the app; manage device backups and shared cards separately. Google handles advertising, diagnostic and purchase data according to its policies and configuration. The app identifies FriendZone Apps as its controller. For privacy questions and requests: friendzonedetectorapp@gmail.com. You may request access, correction, erasure, restriction, objection and portability where applicable, withdraw consent, and complain to your data protection authority (the AEPD in Spain). Google may process data outside your country under its service terms and safeguards.</p>
+<p>
+<a href="https://policies.google.com/privacy">Google · Privacidad / Privacy</a> · <a href="mailto:friendzonedetectorapp@gmail.com">Contacto / Contact</a>
+</p>
+</section>
 </main>
-
-<footer>
-  FriendZone Detector &nbsp;·&nbsp; <a href="mailto:friendzonedetectorapp@gmail.com">friendzonedetectorapp@gmail.com</a>
-</footer>
-
-<script>
-  function setLang(lang) {
-    document.getElementById('es').classList.remove('visible');
-    document.getElementById('en').classList.remove('visible');
-    document.getElementById(lang).classList.add('visible');
-    document.querySelectorAll('.lang-toggle button').forEach(b => b.classList.remove('active'));
-    document.querySelector(`.lang-toggle button[onclick="setLang('${lang}')"]`).classList.add('active');
-    document.getElementById('header-sub').textContent =
-      lang === 'es' ? 'Política de Privacidad' : 'Privacy Policy';
-  }
-</script>
-
-</body>
 </html>
